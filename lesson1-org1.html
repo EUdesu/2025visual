@@ -3,7 +3,10 @@
    <HEAD>
       <meta charset="UTF-8">
 	   <p id="time"></p>
-	   <script>time.textContent = new Date().toLocaleString("ja-JP");</script>
+	   <script>
+		   const now = new Date();
+		   document.getElementById("time").textContent = now.toString();
+	   </script>
       <TITLE>コンピュータグラフィックス</TITLE>
    </HEAD>
    <BODY>
@@ -14,4 +17,5 @@
    </BODY>
 
 </HTML>
+
 
