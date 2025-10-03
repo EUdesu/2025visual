@@ -1,0 +1,16 @@
+article {
+    background-image:url(ganba.png);
+   }
+   h1 {
+      
+      color:aqua;
+   }
+   #aaa{
+    background-image:url(leaf.jpg);
+   }
+   body{
+     text-align: center;
+   }
+   .bbb{
+    color: brown;
+   }
