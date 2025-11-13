@@ -10,7 +10,7 @@
 <!-- 実際には#にURLを記述 -->
 
 <body>
-   <!-- ローカルだと動かないgithubからだと可-->
+   <div id="menu"></div><!-- ローカルだと動かないgithubからだと可-->
    <script>
       fetch("menu_sample1.html")
          .then(response => response.text())
@@ -18,6 +18,7 @@
             document.getElementById("menu").innerHTML = data;
          });
    </script>
+
    <h1>いらっしゃいませ！<br>イタリアン Wine BarChibaTechへようこそ！</h1>
    <p>『普段使いの気取らない贅沢しませんか？」ワインの専門家はいません。自分達が美味しいと思ったワインだけをご用意しております。
       <br>都田沼駅より徒歩2分とアクセス抜群！！<br>お仕事帰りや大切なパートナー、そしてひとり飲みにも様々なシーンにご利用下さい。</p>
