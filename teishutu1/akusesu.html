@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>リストサンプル</title>
+   <link href="css.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+   <div id="menu"></div><!-- ローカルだと動かないgithubからだと可-->
+   <script>
+      fetch("menu_sample1.html")
+         .then(response => response.text())
+         .then(data => {
+            document.getElementById("menu").innerHTML = data;
+         });
+   </script>
+   <h1>アクセス</h1>
+   <p>JR都田沼駅より徒歩2分 京成本線都田沼駅より徒歩10分</p>
+   <p>お店の名前　イタリアン　CIT　（シーアイティ）<br>住所　〒999-999　奈良氏之市都田沼１２３
+      <br>電話　０００－１２３４－５６７８</p>
+   <img src="sozai/外観.jpg">
+   <footer>
+      <p>&copy; Italian Wine BarChibaTech. All Rights Reserved.</p>
+   </footer>
+</body>
+
+</html>
