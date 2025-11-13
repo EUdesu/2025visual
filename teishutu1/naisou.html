@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>リストサンプル</title>
+   <link href="css.css" rel="stylesheet" type="text/css">
+</head>
+
+<!-- 実際には#にURLを記述 -->
+
+<body>
+   <!-- ローカルだと動かないgithubからだと可-->
+   <script>
+      fetch("menu_sample1.html")
+         .then(response => response.text())
+         .then(data => {
+            document.getElementById("menu").innerHTML = data;
+         });
+   </script>
+   <ul class="ddmenu">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="news.html">ニュース</a>
+         <ul>
+            <li><a href="sinseihin.html">新製品</a></li>
+         </ul>
+      </li>
+      <li><a href="kodawari.html">こだわり</a>
+         <ul>
+            <li><a href="toiawase.html">お問い合わせ先</a></li>
+         </ul>
+      </li>
+      <li><a href="kaisya.html">会社情報</a>
+         <ul>
+            <li><a href="akusesu.html">アクセス</a></li>
+            <li><a href="toiawase.html">お問い合わせ先</a></li>
+         </ul>
+      </li>
+   </ul>
+
+   <h1>内装</h1>
+   <p>当店のこだわりの内装についてご紹介します。
+      <br>当店の内装は今年11月に一新したばかり。
+      <br>新しい雰囲気を持つこの空間で特別なひと時をお過ごしください。</p>
+   <div class="naisou">
+      <img src="sozai/内装1.jpg">
+      <p>当店自慢の絵画
+         <br>肩を組みあう二人のように、
+         来店される皆様の中が深まることをお祈りしております
+      </p>
+   </div>
+   <div class="naisou">
+      <img src="sozai/内装2.jpg">
+      <p>こだわりの内装
+         <br>カウンターとテーブル席をご用意しております。
+         <br>また、15名様以上の貸し切りもご用意しております。
+      </p>
+   </div>
+
+   <footer>
+      <p>&copy; Italian Wine BarChibaTech. All Rights Reserved.</p>
+   </footer>
+</body>
+
+</html>

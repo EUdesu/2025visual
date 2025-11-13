@@ -1,0 +1,46 @@
+﻿<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5サンプル</title>
+  <link href="css.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <script>
+    fetch("menu_sample1.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("menu").innerHTML = data;
+      });
+  </script>
+
+
+  <h1>新商品について</h1>
+  <p>期間限定！新商品を販売いたしました。<br>ぜひ一度ご賞味ください。</p>
+  <div class="wrap">
+    <div class="cakes">
+      <h2>フレッシュサラダ</h2>
+      <img src="sozai/フレッシュなサラダ.jpg">
+      <p>契約農場直送サラダです。<br>無農薬野菜の味わいをお楽しみください。</p>
+    </div>
+    <div class="cakes">
+      <h2>パテドカンパーニュ</h2>
+      <img src="sozai/パテドカンパーニュ.jpg">
+      <p>豚肉やレバーを丁寧に練り上げた、田舎風の濃厚なパテです。
+        <br>ワインとの相性抜群！</p>
+    </div>
+    <div class="cakes">
+      <h2>クラフトビール</h2>
+      <img src="sozai/クラフトビール.jpg">
+      <p>個性豊かな香りや深いコクが楽しめる、職人仕込みのビールです。
+        <br>限定銘柄もご用意。</p>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; Italian Wine BarChibaTech. All Rights Reserved.</p>
+  </footer>
+</body>
+
+</html>
