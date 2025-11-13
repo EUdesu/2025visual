@@ -1,0 +1,170 @@
+ body {
+     background-color: #e9d3a1;
+
+
+ }
+
+ footer {
+     background-color: #762445;
+ }
+
+ #nai {
+     width: 50%;
+ }
+
+ .naisou {
+     background-color: #9b9c7c;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     margin-bottom: 10px;
+     padding: 20px;
+     border-radius: 10px;
+ }
+
+ .naisou img {
+     margin-right: 30px;
+     width: 30%;
+ }
+
+ .naisou p {
+     text-align: center
+ }
+
+
+
+
+ /* 「トップへ戻る」ボタンの基本スタイル */
+ .top {
+     /* 画面右下に固定表示 */
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+
+     /* デザイン */
+     background-color: #6A0D15;
+     color: #FAF0E6;
+     padding: 10px 15px;
+     border-radius: 5px;
+     text-decoration: none;
+     font-size: 14px;
+     font-weight: bold;
+     z-index: 1000;
+     display: block;
+ }
+
+ #siro {
+     width: 100%;
+     background-color: #FFFBF8;
+ }
+
+
+ #rogo {
+     width: 50%;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ #douga {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 10px;
+     width: 70%;
+     height: auto;
+ }
+
+ h1,
+ h2 {
+     color: #2f102d;
+ }
+
+ img {
+     width: 50%;
+ }
+
+ .shop {
+     background-color: #F78486;
+     width: 100%;
+ }
+
+ .cakes {
+     background-color: #9b9c7c;
+     width: 31%;
+     padding: 1%;
+     border-radius: 12px;
+     text-align: center;
+
+ }
+
+ .cakes img {
+     width: 100%;
+     border-radius: 12px;
+
+ }
+
+ .wrap {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+ }
+
+
+
+ ul.ddmenu {
+     display: flex;
+     margin: 0px;
+     padding: 0px;
+     background-color: #762445;
+     /* バーの背景色(濃い赤色) */
+ }
+
+ ul.ddmenu li {
+     flex-grow: 1;
+     display: inline-block;
+     list-style-type: none;
+     position: relative;
+ }
+
+ ul.ddmenu ul li {
+     width: 100%;
+
+ }
+
+ ul.ddmenu a {
+     background-color: #762445;
+     /* メニュー項目の背景色(濃い赤色) */
+     color: white;
+     /* メニュー項目の文字色(白色) */
+     line-height: 60px;
+     text-align: center;
+     /* メニュー項目のリンクの高さ(40px) */
+     /* メインメニューの文字列の配置(中央寄せ) */
+     text-decoration: none;
+     /* メニュー項目の装飾(下線を消す) */
+     font-weight: bold;
+     /* 太字にする*/
+     display: block;
+     font-size: 18px;
+ }
+
+ ul.ddmenu ul {
+     display: none;
+     margin: 0px;
+     padding: 0px;
+     position: absolute;
+     width: 100%;
+ }
+
+ ul.ddmenu a:hover {
+     background-color: #a78a43;
+     /* メニュー項目にマウスが載ったときの背景色(淡いピンク) */
+     color: #e52542;
+     /* メニュー項目にマウスが載ったときの文字色(濃い赤色) */
+ }
+
+ ul.ddmenu li:hover ul {
+     display: block;
+     /* ★5:マウスポインタが載っている項目の内部にあるリストを表示する*/
+ }

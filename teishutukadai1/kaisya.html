@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>リストサンプル</title>
+   <link href="css.css" rel="stylesheet" type="text/css">
+</head>
+
+<!-- 実際には#にURLを記述 -->
+
+<body>
+   <div id="siro">
+      <img src="sozai/rogo.png" id="rogo">
+   </div>
+   <div id="menu"></div><!-- ローカルだと動かないgithubからだと可-->
+   <script>
+      fetch("menu_sample1.html")
+         .then(response => response.text())
+         .then(data => {
+            document.getElementById("menu").innerHTML = data;
+         });
+   </script>
+   <ul class="ddmenu">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="news.html">ニュース</a>
+         <ul>
+            <li><a href="sinseihin.html">新製品</a></li>
+         </ul>
+      </li>
+      <li><a href="kodawari.html">こだわり</a>
+         <ul>
+            <li><a href="toiawase.html">お問い合わせ先</a></li>
+         </ul>
+      </li>
+      <li><a href="kaisya.html">会社情報</a>
+         <ul>
+            <li><a href="akusesu.html">アクセス</a></li>
+         </ul>
+      </li>
+   </ul>
+
+   <h1>会社情報</h1>
+   <p>現在、当店では正社員・アルバイトの募集を行っています。<br>
+      ワインに興味をお持ちの方、イタリア料理人志望の方はお気軽にご相談ください。
+      <br>正社員：月給20万～　福利厚生あり　使用期間あり
+      <br>アルバイト：時給1,300円～　交通費支給　制服貸与　まかないあり</p>
+   <video controls id="douga" controls autoplay muted>
+      <source src="sozai/パスタ.mp4" type="video/mp4">
+      <p>お使いのブラウザは動画タグに対応していません。</p>
+   </video>
+
+</body>
+
+</html>
