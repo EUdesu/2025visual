@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>リストサンプル</title>
+   <link href="css.css" rel="stylesheet" type="text/css">
+</head>
+
+<!-- 実際には#にURLを記述 -->
+
+<body>
+   <img src="sozai/rogo.png" id="rogo">
+   <div id="menu"></div><!-- ローカルだと動かないgithubからだと可-->
+   <script>
+      fetch("menu_sample1.html")
+         .then(response => response.text())
+         .then(data => {
+            document.getElementById("menu").innerHTML = data;
+         });
+   </script>
+
+   <h1>お問い合わせ</h1>
+   <p>お問い合わせはこちらからお願いします。 </p>
+   <p>お店の名前　イタリアン　CIT　（シーアイティ）
+      <br>住所　〒999-999　奈良氏之市都田沼１２３
+      <br>電話　０００－１２３４－５６７８
+   </p>
+   <video controls id="douga" controls autoplay muted>
+      <source src="sozai/ワイン.mp4" type="video/mp4">
+      <p>お使いのブラウザは動画タグに対応していません。</p>
+   </video>
+   <footer>
+      <p>&copy; Italian Wine BarChibaTech. All Rights Reserved.</p>
+   </footer>
+</body>
+
+</html>

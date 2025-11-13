@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>リストサンプル</title>
+   <link href="css.css" rel="stylesheet" type="text/css">
+</head>
+
+<!-- 実際には#にURLを記述 -->
+
+<body>
+   <img src="sozai/rogo.png" id="rogo">
+   <div id="menu"></div><!-- ローカルだと動かないgithubからだと可-->
+   <script>
+      fetch("menu_sample1.html")
+         .then(response => response.text())
+         .then(data => {
+            document.getElementById("menu").innerHTML = data;
+         });
+   </script>
+   <ul class="ddmenu">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="news.html">ニュース</a>
+         <ul>
+            <li><a href="sinseihin.html">新製品</a></li>
+         </ul>
+      </li>
+      <li><a href="#">こだわり</a>
+         <ul>
+            <li><a href="#">お問い合わせ先</a></li>
+         </ul>
+      </li>
+      <li><a href="#">会社情報</a>
+         <ul>
+            <li><a href="#">アクセス</a></li>
+         </ul>
+      </li>
+   </ul>
+
+
+
+
+
+   <h1>アクセス</h1>
+   <p>JR都田沼駅より徒歩2分 京成本線都田沼駅より徒歩10分</p>
+   <p>お店の名前　イタリアン　CIT　（シーアイティ）<br>住所　〒999-999　奈良氏之市都田沼１２３
+      <br>電話　０００－１２３４－５６７８</p>
+   <img src="sozai/外観.jpg">
+</body>
+
+</html>
