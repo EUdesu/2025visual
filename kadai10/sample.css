@@ -1,0 +1,15 @@
+.slider-container {
+  max-width: 450px;
+  margin: 20px auto;
+}
+
+.slider-for img,
+.slider-nav img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  background-color: rgb(163, 225, 148);
+}
